@@ -1,3 +1,7 @@
+function callback(data,textStatus, jqXHR) {
+
+}
+
 $(document).ready(function () {
     var var1 = 1;
     var var2 = 2;
