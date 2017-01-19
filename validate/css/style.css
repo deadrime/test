@@ -1,0 +1,113 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6,  
+pre, form, fieldset, input, textarea, p, blockquote, th, td {  
+  padding: 0; 
+  margin: 0; 
+  } 
+fieldset, img {  
+  border: 0; 
+  } 
+table { 
+  border-collapse: collapse; 
+  border-spacing: 0; 
+  } 
+ol, ul { 
+  list-style: none; 
+  } 
+address, caption, cite, code, dfn, em, strong, th, var { 
+  font-weight: normal; 
+  font-style: normal; 
+  } 
+caption, th { 
+  text-align: left; 
+  } 
+h1, h2, h3, h4, h5, h6 { 
+  font-weight: normal; 
+  font-size: 100%; 
+  } 
+q:before, q:after { 
+  content: ''; 
+  } 
+abbr, acronym {  
+  border: 0; 
+  } 
+
+#userdata {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    height: 400px;
+}
+
+#userdata .msg {
+    display: none;
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    background: #7bb7de;
+    border-radius: 4px;
+    z-index: 99;
+}
+
+#userdata .msg:after {
+	bottom: 100%;
+	right: 11px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: #7bb7de;
+	border-width: 5px;
+	margin-left: -5px;
+}
+
+.valid {
+    position: relative;
+}
+
+.valid:after {
+    width: 200px;
+    display: block;
+    height: 37px;
+    line-height: 37px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    content: "";
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.valid.error::after{
+    background-image: url(/img/error.png);
+}
+
+.valid.okey::after {
+    background-image: url(/img/ok.png) ;
+}
+
+.valid.loading::after {
+   background-image: url(/img/loading.svg);
+}
+
+#userdata input {
+	width: 100%;
+	font-size: 13px;
+	padding: 10px 4px;
+    margin: 10px 0;
+	border: 1px solid #cecece;
+	background: #F6F6f6;
+	border-radius: 3px;
+}
+
+
+.btn {
+    margin-top: 14px;
+    box-sizing: content-box;
+    width: 100%;
+    padding: 10px 4px;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 3px;
+    text-align: center;    
+}
