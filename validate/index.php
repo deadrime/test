@@ -14,7 +14,7 @@
         <span>E-mail</span>
         <div class="valid email"><input type="text" name="email" id="email"><span class="msg"></span></div>
         <span>Пароль</span>
-        <div class="valid password"><input type="text" name="password" id="password"><span class="msg"></span></div>
+        <div class="valid password"><input type="text" name="password" id="password"><span class="security">Надежность пароля</span><div class="passline"><div></div></div></div>
         <button type="submit" class="btn">Регистрация</button>
     </form>
 </body>

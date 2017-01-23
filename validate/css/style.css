@@ -111,3 +111,27 @@ abbr, acronym {
     border-radius: 3px;
     text-align: center;    
 }
+
+
+.security {
+    width: 30%;
+    display: block;
+    float: left;
+}
+
+.passline {
+    border-radius: 2px;
+    float: left;
+    width: 70%;
+    height: 20px;
+    background: #d93b3b;
+}
+
+.passline > div {
+    width: 10%;
+    height: 20px;
+    float: left;
+    background: rgb(68, 196, 51);
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
